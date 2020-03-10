@@ -26,6 +26,7 @@ label start:
     l "Maintenant allumons la lumière!"
 
     scene beach_night
+    show smile_luna at left
     l "Voila c'est mieux!"
 
     l "Bien mais c'est un peu triste ici, je vais vous montrer comment mettre un peu d'ambiance mais aussi comment faire un menu"

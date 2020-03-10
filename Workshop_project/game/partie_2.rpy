@@ -15,7 +15,7 @@
                     $sale = False
                 "allez chercher du bois" if bois == False:
                     $fatigue += 1
-                    l "avec ça on devrais pouvoir faire un bon feu!"
+                    l "avec ça on devrait pouvoir faire un bon feu!"
                     $bois = True
                 "me reposer":
                     if fatigue < 3:
@@ -24,7 +24,7 @@
                     $sleep = True
                 "lire un livre":
                     $fatigue += 1
-                    l "Level 26? ça à l'aire intéressant"
+                    l "Level 26? ça à l'air intéressant"
     l "Et maintenant à vous de jouer!"
             
     stop sound

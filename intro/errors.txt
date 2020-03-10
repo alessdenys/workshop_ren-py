@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 5: end of line expected.
+    show aless with dissolve at left
+                             ^
+
+File "game/script.rpy", line 11: end of line expected.
+    show belinda with dissolve at right
+                               ^
+
+Ren'Py Version: Ren'Py 6.99.14.1.3218
+Tue Mar 10 15:59:42 2020

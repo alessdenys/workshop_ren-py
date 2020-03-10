@@ -1,5 +1,6 @@
 ﻿label miam_miam:
     l "J'adore vraiment le chocolat!"
+    hide alien-chocolat with dissolve
     $fatigue = 0
     l "Maintenant je vais vous montrer comment faire une boucle"
     while fatigue < 3:

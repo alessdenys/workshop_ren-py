@@ -27,6 +27,7 @@ label start:
 
     scene beach_night
     show smile_luna at left
+    hide base_luna
     l "Voila c'est mieux!"
 
     l "Bien mais c'est un peu triste ici, je vais vous montrer comment mettre un peu d'ambiance mais aussi comment faire un menu"
@@ -60,13 +61,19 @@ label start:
         "faire régime" if poid > 60:
             l "j'ai un peu exagéré avec la mayonnaise"
     l "Donc on peut masquer ou afficher des options selon les choix précédant mais on peut aussi changer l'issue d'un choix! (je vais aussi en profiter pour parler des labels et des jumps)"
-
+    show alien-chocolat at truecenter
+    show surprise_luna at left
+    hide smile_luna
     menu:
         l "Ho mon dieu un monstre de chocolat que faire?!"
         "le manger":
             if aime_le_chocolat == True:
+                hide surprise_luna
+                show happy_luna at left
                 jump miam_miam
             else:
+                hide surprise_luna
+                show angry_luna at left
                 jump LA_MORT
         "Fuir":
             if poid < 61:
@@ -80,6 +87,8 @@ label start:
     with fade
 label LA_MORT:
     l "Beurk j'aime vraiment pas le chocolat!{w} mais qu'est ce qu'il fait?! Haaaa il me mange! Haaaa!"
+    hide angry_luna with dissolve
+    "chocolat" "Niom Niom"
 
     stop sound
     return  
